@@ -8,6 +8,8 @@ Plug('nvim-lualine/lualine.nvim')
 Plug('nvim-tree/nvim-web-devicons')
 Plug('lukas-reineke/indent-blankline.nvim')
 
+-- add treesitter and fuzzy finder and tree
+
 -- cmp
 Plug('neovim/nvim-lspconfig')
 Plug('hrsh7th/cmp-nvim-lsp')
