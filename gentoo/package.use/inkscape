@@ -1,0 +1,3 @@
+app-text/poppler cairo
+dev-python/pillow webp tiff
+media-libs/tiff jpeg
