@@ -9,9 +9,13 @@ set $up k
 set $right l
 set $term kitty
 set $menu wofi --show drun
+for_window [title="QEMU"] floating enable
+
+exec --no-startup-id dbus-update-activation-environment --all
 
 default_border none
-font $font 1
+
+font $font 14
 
 # --- KEY BINDINGS --- #
 bindsym $mod+Return exec $term

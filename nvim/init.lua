@@ -10,6 +10,12 @@ Plug('lukas-reineke/indent-blankline.nvim')
 
 -- add treesitter and fuzzy finder and tree
 
+Plug ("nvim-treesitter/nvim-treesitter" , {['do'] = ':TSUpdate'})
+Plug ('nvim-lua/plenary.nvim')
+Plug ('nvim-telescope/telescope.nvim')
+
+Plug ('lukas-reineke/lsp-format.nvim')
+
 -- cmp
 Plug('neovim/nvim-lspconfig')
 Plug('hrsh7th/cmp-nvim-lsp')
@@ -19,6 +25,7 @@ Plug('hrsh7th/cmp-cmdline')
 Plug('hrsh7th/nvim-cmp')
 Plug('hrsh7th/cmp-vsnip')
 Plug('hrsh7th/vim-vsnip')
+Plug("petertriho/cmp-git")
 
 Plug('windwp/nvim-autopairs')
 vim.call('plug#end')
@@ -28,6 +35,12 @@ vim.opt.termguicolors = true
 vim.wo.number = true
 vim.wo.relativenumber = true
 vim.cmd.colorscheme "vscode"
+
+local builtin = require('telescope.builtin')
+vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = 'Telescope find files' })
+vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = 'Telescope live grep' })
+vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = 'Telescope buffers' })
+vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help tags' })
 
 require("nvim-autopairs").setup {}
 require("ibl").setup()
@@ -110,14 +123,14 @@ require('lualine').setup {
 
   -- To use git you need to install the plugin petertriho/cmp-git and uncomment lines below
   -- Set configuration for specific filetype.
-  --[[ cmp.setup.filetype('gitcommit', {
+  cmp.setup.filetype('gitcommit', {
     sources = cmp.config.sources({
       { name = 'git' },
     }, {
       { name = 'buffer' },
     })
  })
- require("cmp_git").setup() ]]-- 
+ require("cmp_git").setup()
 
   -- Use buffer source for `/` and `?` (if you enabled `native_menu`, this won't work anymore).
   cmp.setup.cmdline({ '/', '?' }, {

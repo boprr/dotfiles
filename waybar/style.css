@@ -202,12 +202,18 @@ label:focus {
 }
 
 #wireplumber {
-    background-color: #fff0f5;
-    color: #000000;
+    background-color: #1c1c1c;
+    color: #ffffff;
 }
 
 #wireplumber.muted {
-    background-color: #f53c3c;
+    background-color: #d5d5d5;
+}
+
+#custom-headset-battery
+{
+    background-color: #1c1c1c;
+    color: #ffffff;
 }
 
 #custom-media {
@@ -233,7 +239,7 @@ label:focus {
 }
 
 #tray {
-    background-color: #2980b9;
+    background-color: #000;
 }
 
 #tray > .passive {
