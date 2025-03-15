@@ -1,0 +1,4 @@
+output DP-3 resolution 1920x1080 position 1920,0	 mode 1920x1080@74.973Hz
+output HDMI-A-1	   resolution 1920x1080 position ,0 mode 1920x1080@74.973Hz
+
+output * bg $HOME/.config/sway/img/wallpaper.png fill
