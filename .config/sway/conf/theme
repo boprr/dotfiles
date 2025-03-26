@@ -43,7 +43,6 @@ font FiraCode 10
 smart_gaps on
 gaps inner 5
 gaps outer 4
-corner_radius 10
 
 # Border
 smart_borders on
