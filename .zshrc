@@ -16,6 +16,7 @@ if [[ -n $SSH_CONNECTION ]]; then
  fi
 export LLVM=1
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+alias dotfiles='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
 
 # bun completions
 [ -s "/home/s/.bun/_bun" ] && source "/home/s/.bun/_bun"
