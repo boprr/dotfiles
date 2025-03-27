@@ -1,0 +1,5 @@
+net-dns/dnsmasq script
+net-libs/gnutls pkcs11 tools
+app-emulation/virt-manager gui
+net-misc/spice-gtk usbredir
+net-libs/gtk-vnc -wayland X

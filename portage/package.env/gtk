@@ -1,0 +1,3 @@
+net-libs/gtk-vnc gcc
+gui-libs/vte-common gcc
+x11-libs/vte gcc

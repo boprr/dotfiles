@@ -1,0 +1,8 @@
+profile/
+make.profile
+binrepos.conf/
+*crossdev*
+*cross*
+sys-firmware
+sys-kernel
+00cpu-flags

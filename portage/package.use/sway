@@ -1,0 +1,11 @@
+gui-wm/swayfx X
+gui-wm/sway X
+gui-libs/wlroots X
+media-libs/libepoxy X
+media-libs/mesa X
+
+# swaync
+gui-libs/gtk-layer-shell vala introspection
+
+# tray
+dev-libs/libdbusmenu gtk3
